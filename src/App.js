@@ -4,6 +4,7 @@ import { useEffect, useState} from 'react';
 
 
 
+
 const App =()=>{
   const [size, setSize]= useState({height: window.innerHeight,
     width: window.innerWidth})
@@ -12,7 +13,7 @@ const App =()=>{
   
   useEffect(()=>{
     const handleSize =()=>{
-      setSize({height: window.innerHeight,width: window.innerWidth})
+      setSize({height: window.innerHeight - 80,width: window.innerWidth})
     }
     window.addEventListener('resize', handleSize)
 
@@ -21,13 +22,12 @@ const App =()=>{
 
   },[setSize])
 
-console.log(size)
 
   return (
     <>
       <Header />
       <div style={size}>
-      <AboutMe />
+      <AboutMe windowSize = {size}/>
       </div>
     </>
   )

@@ -1,16 +1,17 @@
 body{
     font-family: 'Roboto Mono', monospace;
+    background-color: #484f4e;
 }
 
 .nav-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
     
 }
 
 .nav-link {
     color: #14FFEC;
 }
-.nav-link:hover {
-    color: #c2e1de;
-}
 
+.nav-link:hover { 
+    color:antiquewhite
+}
